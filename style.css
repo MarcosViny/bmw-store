@@ -1,0 +1,297 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 20px;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+nav #logo {
+  position: absolute;
+}
+
+nav #hamburguer {
+  display: none;
+}
+
+nav #hamburguer:checked ~ ul {
+  display: block;
+}
+
+nav .hamburguer {
+  align-self: flex-end;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #b10000;
+}
+
+nav ul {
+  display: none;
+  margin-top: 10px;
+  flex-direction: column;
+  list-style: none;
+}
+
+nav ul li {
+  flex: 1 1 100%;
+}
+
+nav ul li:not(.last) {
+  margin-bottom: 10px;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background: gold;
+  color: #312f2f;
+  border: none;
+}
+
+/* Section Home */
+
+#home-page {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.title-home {
+  position: absolute;
+
+  min-width: 200px;
+  max-width: 50%;
+
+  padding: 20px;
+  background: #000000cc;
+}
+
+.title-home span {
+  color: #fff;
+}
+
+.title-home h1 {
+  color: gold;
+  text-transform: uppercase;
+}
+
+.background-home {
+  background: url('https://images.unsplash.com/photo-1552321876-ac707a080f1b?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80');
+  background-size: cover;
+  background-position: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+/* Section Cars */
+
+#cars-page {
+  background-color: #f8f9f9;
+
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.heading-container {
+  text-align: center;
+}
+
+.car-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin-bottom: 20px;
+}
+
+.car {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  
+  background-color: #ffdf37;
+  margin-top: 20px;
+}
+
+.car-image,
+.car-title,
+.car-description,
+.link-offer {
+  margin-bottom: 20px;
+}
+
+.car-image {
+  width: 100%;
+}
+
+.link-offer a {
+  display: block;
+  padding: 6px;
+  text-decoration: none;
+  color: #2d3436;
+  border: 1px solid #2d3436;
+  width: 50%;
+  margin: auto;
+}
+
+.link-offer a:hover {
+  background: #2d3436;
+  color: gold;
+}
+
+/* Contact Page */
+
+#contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-image: linear-gradient(315deg, #2d3436 0%, #181717 74%);
+  min-height: 100%;
+
+  padding: 20px;
+}
+
+.form-contact {
+  display: flex;
+  flex-direction: column;
+  max-height: 100%;
+}
+
+.form-contact h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 32px;
+}
+
+.form-contact label {
+  font-size: 22px;
+  color: #ffdf37;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.input-block,
+.textarea-block,
+.btnSubmit {
+  padding: 15px;
+  margin-bottom: 10px;
+
+  border: 1px solid #fff;
+
+  background: #25292a;
+  color: #fff;
+}
+
+.textarea-block {
+  resize: vertical;
+  min-height: 40px;
+}
+
+.btnSubmit {
+  background: gold;
+  color: #25292a;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  
+  /* Menu */
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav #logo {
+    position: initial;
+  }
+
+  nav .hamburguer {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 34%;
+  }
+
+  nav ul li {
+    flex: 0 1 31%;
+  }
+
+  nav ul,
+  nav ul li:not(.last) {
+    margin: 0;
+  }
+
+  /* Section Home */
+
+  .title-home {
+    bottom: 20px;
+  }
+
+  .title-home h1 {
+    font-size: 40px;
+  }
+
+  .background-home {
+    background: url("https://images.unsplash.com/photo-1595968347414-37b3860f82ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    background-size: cover;
+  }
+
+  /* Section Cars */
+
+  #cars-page {
+    padding: 20px 0;
+  }
+
+  .car {
+    max-width: 30%;
+    margin: 0;
+  }
+
+  .heading-container {
+    padding: 20px;
+  }
+
+  /* Section Form */
+
+  .form-contact {
+    width: 50%;
+  }
+
+  .form-contact h1 {
+    min-width: 350px;
+  }
+}

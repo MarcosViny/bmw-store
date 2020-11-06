@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<head>
+    <title>BMW Store</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="images/logo.svg">
+    <script src="https://kit.fontawesome.com/46e02bda27.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img id="logo" alt="BMW Logo" src="images/logo.svg">
+
+            <input type="checkbox" id="hamburguer">
+            <label for="hamburguer" class="hamburguer"><i class="fa fa-bars"></i></label>
+
+            <ul>
+                <li>
+                    <a href="#home-page" alt="Página Inicial">Home</a>
+                </li>
+                <li>
+                    <a href="#cars-page" alt="Carros">Carros</a>
+                </li>
+                <li class="last">
+                    <a href="#contact-page" alt="Contato">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home-page">
+        <div class="title-home">
+            <span>BMW</span>
+            <h1>Encontre o carro dos seus sonhos!</h1>
+        </div>
+        <div class="background-home"></div>
+    </section>
+
+    <section id="cars-page">
+        <header class="heading-container">
+            <h1>OFERTAS EXCLUSIVAS PARA VOCÊ ADQUIRIR UMA BMW</h1>
+        </header>
+
+        <div class="car-container">
+            <div class="car card-1">
+                <img class="car-image"
+                    src="https://images.unsplash.com/flagged/photo-1553505192-acca7d4509be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=767&q=80"
+                    alt="Imagem do Carro">
+                <header class="car-title">
+                    <h2>
+                        BMW SPORT
+                    </h2>
+                </header>
+                <div class="car-description">
+                    <p>O ápice do luxo e capacidade.</p>
+                </div>
+                <div class="link-offer">
+                    <a href="#">VER OFERTA</a>
+                </div>
+            </div>
+
+            <div class="car card-2">
+                <img class="car-image"
+                    src="https://images.unsplash.com/photo-1555215695-3004980ad54e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                    alt="Imagem do Carro">
+                <header class="car-title">
+                    <h2>
+                        BMW SPORT
+                    </h2>
+                </header>
+                <div class="car-description">
+                    <p>O ápice do luxo e capacidade.</p>
+                </div>
+                <div class="link-offer">
+                    <a href="#">VER OFERTA</a>
+                </div>
+            </div>
+
+            <div class="car card-3">
+                <img class="car-image"
+                    src="https://images.unsplash.com/photo-1556189250-72ba954cfc2b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                    alt="Imagem BMW">
+                <header class="car-title">
+                    <h2>
+                        BMW SPORT
+                    </h2>
+                </header>
+                <div class="car-description">
+                    <p>O ápice do luxo e capacidade.</p>
+                </div>
+                <div class="link-offer">
+                    <a href="#">VER OFERTA</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-page">
+        <form class="form-contact">
+            <h1>Para entrar em contato preencha os campos!</h1>
+
+            <label for="name">Nome</label>
+            <input type="text" id="name" class="input-block" required>
+
+            <label for="last-name">Sobrenome</label>
+            <input type="text" id="last-name" class="input-block" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="input-block" required>
+
+            <label for="message">Mensagem</label>
+            <textarea name="message" id="message" class="textarea-block" rows="4" required></textarea>
+
+            <button type="submit" class="btnSubmit">Enviar</button>
+        </form>
+    </section>
+</body>
+
+</html>
