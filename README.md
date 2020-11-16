@@ -1,6 +1,6 @@
 <h1 align="center">BMW Store</h1>
 
-   <h3>Site created to practice HTML, CSS, Javascript, layout with Flexbox</h3>
+   <h3>Site created to practice HTML, CSS, layout with Flexbox</h3>
 
     ✅ Flexbox
     ✅ Media Queries
@@ -23,7 +23,6 @@
 
 - HTML
 - CSS
-- Javascript
 
 <h1 align="center">Demo 🤔</h1>
    https://marcosviny.github.io/bmw-store/
